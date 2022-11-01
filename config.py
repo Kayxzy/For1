@@ -7,10 +7,10 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "13888553"))
+APP_ID = int(os.environ.get("APP_ID", "20810942"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "d000b399aacbd205fdc14719a3e03cbc")
+API_HASH = os.environ.get("API_HASH", "00c3cdb1b35bb707f9878d26685dba5b")
 
 #Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100"))
@@ -27,13 +27,13 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1668766845").split()):
+    for x in (os.environ.get("ADMINS", "1812417940").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Haii {first}\n\n<b>Gabung Dulu Ya Lalu Coba Lagi</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Gabung Dulu Ya Lalu Coba Lagi</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
